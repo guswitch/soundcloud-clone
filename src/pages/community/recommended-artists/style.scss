@@ -1,0 +1,63 @@
+@import "../../../global.scss";
+
+.Home {
+    display: block;
+    height: 100vh;
+}
+
+.RecommendedArtists {
+    
+}
+
+.RecommendedInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h2 {
+        font-weight: 400;
+        color: $white;
+    }
+    a {
+        color: $light_blue;
+    }
+}
+
+.ArtistsProfile {
+    display: flex;
+    flex-direction: row;
+}
+
+.ArtistProfile {
+    margin: 15px 30px;
+    text-align: center;
+
+    img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+
+    .FollowBtn {
+        font-size: .8rem;
+        border-radius: 50%;
+        padding: 3px 5px;
+        color: $white;
+        background-color: $orange;
+        position: absolute;
+        margin-left: -30px;
+        margin-top: 80px;
+    }
+
+    h4 {
+        font-size: 1.1rem;
+        font-weight: 400;
+        padding: 10px 0 5px 0;
+        color: $white;
+    }
+
+    span {
+        font-size: 0.9rem;
+        font-weight: 100;
+        color: $light_blue;
+    } 
+}

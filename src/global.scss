@@ -1,0 +1,57 @@
+@import "./variables.scss";
+@import "./responsive.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: rgb(38, 43, 48);
+    background: radial-gradient(circle, rgba(38, 43, 48, 1) 0%, rgba(65, 58, 64, 1) 0%, rgba(47, 52, 64, 1) 100%);
+
+    // background: rgb(102,61,49);
+    // background: radial-gradient(circle, rgb(102, 61, 49) 0%, rgba(38,43,48,1) 62%, rgba(30,35,55,1) 100%);
+}
+
+button,
+input,
+select {
+    border: none;
+    outline: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 15em 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "Navbar Topnav Topnav Topnav"
+        "Navbar Content Content Content"
+        "Navbar Content Content Content";
+}
+
+.Navbar {
+    grid-area: Navbar;
+}
+
+.Topnav {
+    grid-area: Topnav;
+}
+
+.Content {
+    grid-area: Content;
+    padding: 35px 25px;
+}
