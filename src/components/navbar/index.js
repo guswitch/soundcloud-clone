@@ -11,19 +11,19 @@ export default function Navbar() {
             <ul className="NavOptions">
                 <h3> For you </h3>
                 <li>
-                    <Link to="soundcloud-clone/">
+                    <Link to="/home">
                         <FontAwesomeIcon icon={['fas', 'home']} />
                         <span>Home</span>
                     </Link>
                 </li>
                 <li>
-                    <Link to="soundcloud-clone/community">
+                    <Link to="community">
                         <FontAwesomeIcon icon={['fas', 'users']} />
                         <span>Community</span>
                     </Link>
                 </li>
                 <li>
-                    <Link to="soundcloud-clone/">
+                    <Link to="/home">
                         <FontAwesomeIcon icon={['fas', 'compass']} />
                         <span>Discover</span>
                     </Link>

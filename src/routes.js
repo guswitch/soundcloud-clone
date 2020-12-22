@@ -19,19 +19,19 @@ export default function Routes() {
             <div className="Content">
                 <Switch>
 
-                    <Route exact path='soundcloud-clone/'>
+                    <Route exact path='/home'>
                         <Home />
                     </Route>
 
-                    <Route path='soundcloud-clone/community'>
+                    <Route path='/community'>
                         <Community />
                     </Route>
 
-                    <Route path='soundcloud-clone/stream'>
+                    <Route path='/stream'>
                         <Stream />
                     </Route>
 
-                    <Route path='soundcloud-clone/statistics'>
+                    <Route path='/statistics'>
                         <Statistics />
                     </Route>
 
