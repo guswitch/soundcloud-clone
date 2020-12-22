@@ -29,13 +29,13 @@ export default function Navbar() {
                     </Link>
                 </li>
                 <li>
-                    <Link to="soundcloud-clone/stream">
+                    <Link to="/stream">
                         <FontAwesomeIcon icon={['fas', 'globe']} />
                         <span>Stream</span>
                     </Link>
                 </li>
                 <li>
-                    <Link to="soundcloud-clone/statistics">
+                    <Link to="/statistics">
                         <FontAwesomeIcon icon={['fas', 'chart-bar']} />
                         <span>Statistics</span>
                     </Link>
