@@ -11,7 +11,7 @@ import Player from "./components/player";
 
 export default function Routes() {
     return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
 
             <Navbar />
             <Topnav />
