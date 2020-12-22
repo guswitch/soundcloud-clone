@@ -19,6 +19,10 @@ export default function Routes() {
             <div className="Content">
                 <Switch>
 
+                    <Route exact path='/'>
+                        <Home />
+                    </Route>
+
                     <Route exact path='/home'>
                         <Home />
                     </Route>
