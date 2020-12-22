@@ -1,11 +1,17 @@
 import './style.scss';
-import AudioUrl from '../../assets/songs/01. Sidoka - Sommelier.mp3'
+import AudioUrl from '../../assets/songs/somelier.ogg';
+import AudioPlayer from 'react-h5-audio-player';
+import 'react-h5-audio-player/lib/styles.css';
+
 export default function Player() {
     return (
         <div className="Player">
-            <audio controls>
-                <source src={AudioUrl} type="audio/mp3"></source>
-            </audio>
-        </div>
+            <AudioPlayer
+                autoPlay
+                src={AudioUrl}
+                onPlay={e => console.log("onPlay")}
+            // other props here
+            />
+        </div >
     )
 }

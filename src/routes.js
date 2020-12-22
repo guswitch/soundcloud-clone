@@ -7,6 +7,7 @@ import Stream from './pages/stream';
 import Statistics from './pages/statistics';
 import Navbar from "./components/navbar";
 import Topnav from "./components/topnav";
+import Player from "./components/player";
 
 export default function Routes() {
     return (
@@ -18,23 +19,25 @@ export default function Routes() {
             <div className="Content">
                 <Switch>
 
-                    <Route exact path='/'>
+                    <Route exact path='soundcloud-clone/'>
                         <Home />
                     </Route>
 
-                    <Route path='/community'>
+                    <Route path='soundcloud-clone/community'>
                         <Community />
                     </Route>
 
-                    <Route path='/stream'>
+                    <Route path='soundcloud-clone/stream'>
                         <Stream />
                     </Route>
 
-                    <Route path='/statistics'>
+                    <Route path='soundcloud-clone/statistics'>
                         <Statistics />
                     </Route>
 
                 </Switch>
+
+                <Player />
             </div>
 
         </Router>

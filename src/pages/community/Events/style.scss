@@ -12,10 +12,11 @@
 .EventsContent {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .EventItem {
-    width: 45%;
+    max-width: 45%;
 }
 
 .EventHeader {
