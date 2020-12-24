@@ -22,3 +22,11 @@
     height: 15px !important;
     background-color: $orange !important;
 }
+
+@media only screen and (max-width: 600px) {
+    .rhap_container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 88% !important;
+    }
+}

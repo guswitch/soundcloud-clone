@@ -96,3 +96,10 @@
     }
 
 }
+
+@media only screen and (max-width: 600px) {
+    .EventItem {
+        margin-top: 10px;
+        max-width: 100%;
+    }
+}

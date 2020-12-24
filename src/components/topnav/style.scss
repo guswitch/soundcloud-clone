@@ -91,3 +91,19 @@
         }
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .Topnav {
+        padding-left: 0;
+        justify-content: center;
+    }
+    .TopNavSearch {
+        width: 90%;
+    }
+    .TopNavUpload {
+        display: none;
+    }
+    .TopNavInfo {
+        display: none;
+    }
+}

@@ -25,10 +25,11 @@
 .ArtistsProfile {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .ArtistProfile {
-    margin: 15px 30px;
+    margin: 15px 1.5em;
     text-align: center;
 
     img {

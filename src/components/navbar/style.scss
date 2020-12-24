@@ -1,12 +1,17 @@
 @import "../../global.scss";
 
-.Navbar {
+.Navbar, .Navbar-Show {
     position: fixed;
     float: left;
     height: 100vh;
     padding: 30px 35px;
     background-color: $dark_blue;
+    
+    z-index: 500;
+    transition: 0.5s ease-in-out;
 }
+
+
 
 .NavLogo {
     display: block;
@@ -57,4 +62,31 @@
 
 .NavSeparator {
     border: 1px solid #34394B;
+}
+.NavResponsive {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;  
+}
+
+.responsive-btn {
+    font-size: 1.5rem;
+    color: $white;
+}
+
+@media only screen and (max-width: 600px) {
+    .Navbar {
+        overflow-y: scroll;
+        margin-left: -300px;
+    }
+
+    .Navbar-Show {
+        overflow-y: scroll;
+        margin-left: 0 !important;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+
 }

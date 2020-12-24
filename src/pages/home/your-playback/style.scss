@@ -17,6 +17,7 @@
 .YourPlaybackList {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .YourPlaybackItem {
@@ -37,5 +38,28 @@
     p {
         font-weight: 200;
         color: $light_blue;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .YourPlaybackItem {
+        margin: 15px 1.5em;
+
+        img {
+            height: 7em;
+            width: 7em;
+        }
+        h3 {
+            white-space: nowrap;
+            width: 100px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        p {
+            white-space: nowrap;
+            width: 100px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
     }
 }
